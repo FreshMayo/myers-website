@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script language="JavaScript">
+        function greeting()
+        {
+          var name = prompt("Type your name");  
+          document.all.fm1.question.value = "No, "+name+", you did not get a beta key."; 
+          document.all.userName.style.visibility = "visible";
+        }  
+        </script>    
+    </head>
+<body>
+    <center>
+        <h1>About The Game.</h1>
+
+        <p>Valorant is the game to replace CSGO and Overwatch! Combine percision aim with dashing ability to capture and defened the bomb site! </a>
+        <br/><br/>
+    
+        <img src="images/aPicture.jpg" width="800"/>
+
+        <br/><br/>
+            <form name="fm1">
+                <div id=userName style="visibility:hidden; width='60'">
+                    <input type="text" name="question" size="40"/>
+                         </div>
+                        <br/>
+                <input type="button" value="Do you get a beta key?" onClick="greeting()"/>
+            </form>
+            <form action="rollOver.html">
+                 <input type="submit" value="About Ranked" />
+             </form>
+             <form action="index.html">
+                 <input type="submit" value="Home Page" />
+             </form>
+    </center>
+</body>
+</html>
